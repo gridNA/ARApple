@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
 options: "f9423017bb2b6ae89487af887b900a7e"
-build_time: [1529137153, 713362000]
+build_time: [1529506380, 273642000]
 inputs:
-  "/Users/kgridina/Desktop/ARKit/ARApple/3dObjRendering/3dObjRendering/ViewController.swift": [1529137073, 0]
-  "/Users/kgridina/Desktop/ARKit/ARApple/3dObjRendering/3dObjRendering/AppDelegate.swift": [1529137073, 0]
+  "/Users/kgridina/Desktop/ARKit/ARApple/3dObjRendering/3dObjRendering/ViewController.swift": [1529137718, 0]
+  "/Users/kgridina/Desktop/ARKit/ARApple/3dObjRendering/3dObjRendering/AppDelegate.swift": [1529137718, 0]
