@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "67fe404ee902959e22e0e7221de1060d"
+build_time: [1529532038, 153258000]
+inputs:
+  "/Users/kgridina/Desktop/ARKit/testARApp copy 2/cameraApplying/ViewController.swift": [1529532020, 0]
+  "/Users/kgridina/Desktop/ARKit/testARApp copy 2/cameraApplying/AppDelegate.swift": [1529532022, 0]
