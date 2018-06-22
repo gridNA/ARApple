@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
-options: "e1d9013ada172aaed270d7045cf25d94"
-build_time: [1528736577, 687083000]
-inputs:
-  "/Users/kgridina/Desktop/ARKit/ARKitty/3dObjRendering/testARApp/ViewController.swift": [1528570462, 0]
-  "/Users/kgridina/Desktop/ARKit/ARKitty/3dObjRendering/testARApp/AppDelegate.swift": [1526908163, 0]
