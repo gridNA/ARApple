@@ -13,7 +13,7 @@ import ARKit
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,9 +25,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         let scene = SCNScene()
         let appleShape = SCNSphere(radius: 0.3)
-        appleShape.firstMaterial?.diffuse.contents = UIImage(named: "art.scnassets/appleD.jpg")
-        appleShape.firstMaterial?.multiply.contents = UIColor.green
-        appleShape.firstMaterial?.diffuse.intensity = 4
+//        appleShape.firstMaterial?.diffuse.contents = UIImage(named: "art.scnassets/appleD.jpg")
+//        appleShape.firstMaterial?.multiply.contents = UIColor.green
+//        appleShape.firstMaterial?.diffuse.intensity = 4
+        let material = SCNMaterial()
+        material.diffuse.intensity = 3
+        material.diffuse.contents = UIColor.red
+        appleShape.materials = [material]
         let appleNode = SCNNode(geometry: appleShape)
         appleNode.position = SCNVector3(0.2, 0.2, 0.2)
         scene.rootNode.addChildNode(appleNode)
@@ -80,5 +84,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
+    }
+
+    func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
+        switch(camera.trackingState) {
+        case .notAvailable:
+            print("Cannot start ARSession!")
+        case .limited(.initializing):
+            print("Learning about surrounding. Try moving around")
+        case .limited(.insufficientFeatures):
+            print("Try turning on more lights and moving around")
+        case .limited(.excessiveMotion):
+            print("Try moving your phone slower")
+        case .normal:
+            print("normal")
+        case .limited(.relocalizing):
+            print("limited")
+        }
     }
 }

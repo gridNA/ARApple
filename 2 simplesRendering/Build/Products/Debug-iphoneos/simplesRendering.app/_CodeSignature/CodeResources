@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		7HGUEKLgmcrgBfHLKOQNJoVqRzc=
+		9RKtV167C7GBJqur67ArWjrG3MQ=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		1bR9l6XaR4Adt5QokrAK4lk1TcA=
+		MUmceZvFTpDdV3kccnlMg2yMGoI=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-BrB-h1-WRS.nib</key>
 		<data>
-		s1wCgXlOPmDIpE8Yggoe0S2XeZo=
+		IcU5rsH2b9H3qgVcPFX32YtvQXQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
 		<data>
-		MCCdQRfZ39VpJqBL3qIDBAeeM0Y=
+		pFtyIvExwlIeqCyZPsjImTPe/Z8=
 		</data>
 		<key>Frameworks/libswiftARKit.dylib</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4CDxTUXhzoo1nHNO875Uu7MuL3A=
+		q2h/ar9sUxFxRjE7i5FKck3dtQE=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -122,7 +122,11 @@
 		</data>
 		<key>art.scnassets/apple.scn</key>
 		<data>
-		+cIAQfeX2KTZgyr/ag5M24nye9k=
+		3JgnY80nwAbCWmBZ8KLSzzA27X8=
+		</data>
+		<key>art.scnassets/texture.png</key>
+		<data>
+		gaGB/KjN1LsGxtwW2h32ZmuHfis=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -139,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7HGUEKLgmcrgBfHLKOQNJoVqRzc=
+			9RKtV167C7GBJqur67ArWjrG3MQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			2AeMKQaGU3gHMy+vDq9R1lQ1m1g2j8vtygozz6ZP/z0=
+			AgvFUBH4F/XSkAvH+WlYlL+0xCKJO9ddafzROqYcbO8=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -161,22 +165,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1bR9l6XaR4Adt5QokrAK4lk1TcA=
+			MUmceZvFTpDdV3kccnlMg2yMGoI=
 			</data>
 			<key>hash2</key>
 			<data>
-			srl1fV/T6LzXPEls1sMlUyQ0bK9Iw82JkBFf8PLuGck=
+			G1E0Yn8K9mnFz1dDzk+sXv2Kr0pHcFej8C8z+yn/u1s=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-BrB-h1-WRS.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s1wCgXlOPmDIpE8Yggoe0S2XeZo=
+			IcU5rsH2b9H3qgVcPFX32YtvQXQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			dSnuwBaVmVMKbIz6kAMp1VtoOZxaywwNcep6etDyxc0=
+			r3Tp9cP8XEUGuKVjvbkprPnM6kdNOVZsL7uBrHoL8Kg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -194,11 +198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MCCdQRfZ39VpJqBL3qIDBAeeM0Y=
+			pFtyIvExwlIeqCyZPsjImTPe/Z8=
 			</data>
 			<key>hash2</key>
 			<data>
-			fZMlOa+rFLIsTIwCBtsfGZMSdPJPNflISWCuFVeXsTc=
+			YABPTUL/6j/LEiYGztjYeX/ADBdBcZKK+aEuE0Gt+Gc=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftARKit.dylib</key>
@@ -436,11 +440,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+cIAQfeX2KTZgyr/ag5M24nye9k=
+			3JgnY80nwAbCWmBZ8KLSzzA27X8=
 			</data>
 			<key>hash2</key>
 			<data>
-			a5FRaijYKUxxN5jNfhWiuaZMAliFWy7I1Owm7IEdD/Q=
+			Yr9y8XBpSFPgwpPuJZ6Gi/i4AdGkQJEZ43OHnmpRANE=
+			</data>
+		</dict>
+		<key>art.scnassets/texture.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gaGB/KjN1LsGxtwW2h32ZmuHfis=
+			</data>
+			<key>hash2</key>
+			<data>
+			19UNANRHVpO7/ekTYZnvIVCo4zj36gbc91npRtOQ7Nw=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

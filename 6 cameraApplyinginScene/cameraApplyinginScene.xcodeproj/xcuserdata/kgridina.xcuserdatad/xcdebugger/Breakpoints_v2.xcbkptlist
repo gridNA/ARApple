@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cameraApplying/ViewController.swift"
-            timestampString = "551227120.2863359"
+            timestampString = "557685228.8480999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -38,11 +38,11 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "cameraApplying.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "cameraApplying"
+                  symbolName = "cameraApplyinginScene.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "cameraApplyinginScene"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kgridina/Desktop/ARKit/ARApple/cameraApplyinginScene/cameraApplying/ViewController.swift"
-                  timestampString = "551227120.423522"
+                  urlString = "file:///Users/kgridina/Desktop/ARKit/ARApple/6%20cameraApplyinginScene/cameraApplying/ViewController.swift"
+                  timestampString = "557685229.157746"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -53,18 +53,34 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.SCNNode) -&gt; Swift.Bool in cameraApplying.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "cameraApplying"
+                  symbolName = "closure #1 (__ObjC.SCNNode) -&gt; Swift.Bool in cameraApplyinginScene.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "cameraApplyinginScene"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kgridina/Desktop/ARKit/ARApple/cameraApplyinginScene/cameraApplying/ViewController.swift"
-                  timestampString = "551227120.425149"
+                  urlString = "file:///Users/kgridina/Desktop/ARKit/ARApple/6%20cameraApplyinginScene/cameraApplying/ViewController.swift"
+                  timestampString = "557685229.1594861"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
                   endingLineNumber = "29"
-                  offsetFromSymbolStart = "24">
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cameraApplying/ViewController.swift"
+            timestampString = "557685248.628124"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

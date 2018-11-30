@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2 (swiftlang-1000.11.37.1 clang-1000.11.45.1)"
+options: "8f4e269c7c2ceca0c8e769c3d60dc524"
+build_time: [1542657553, 96407000]
+inputs:
+  "/Users/kgridina/Desktop/ARKit 2/ARApple/1 planeNodeRendering/planeNodeRendering/ViewController.swift": [1535989159, 0]
+  "/Users/kgridina/Desktop/ARKit 2/ARApple/1 planeNodeRendering/planeNodeRendering/AppDelegate.swift": [1529506348, 0]

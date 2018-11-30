@@ -19,7 +19,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the view's delegate
         sceneView.delegate = self
-        //sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,13 +42,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
-        let material = SCNMaterial()
-        material.displacement.contents = UIColor.green
+//        let material = SCNMaterial()
+//        material.displacement.contents = UIColor.green
         let plane = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
-        plane.materials = [material]
+//        plane.materials = [material]
         let planeNode = SCNNode(geometry: plane)
         planeNode.simdPosition = float3(planeAnchor.center.x, 0, planeAnchor.center.z)
-        //planeNode.eulerAngles.x = -.pi/2
+        planeNode.eulerAngles.x = -.pi/2
         node.addChildNode(planeNode)
     }
 

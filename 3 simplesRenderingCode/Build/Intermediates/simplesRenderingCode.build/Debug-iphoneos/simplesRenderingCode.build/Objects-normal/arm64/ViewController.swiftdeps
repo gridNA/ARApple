@@ -25,6 +25,9 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - "Error"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "SCNMaterial"
 - "SCNNode"
 - !private "SCNScene"
 - "SCNSceneRenderer"
@@ -32,7 +35,6 @@ depends-top-level:
 - !private "SCNVector3"
 - !private "StringLiteralType"
 - !private "UIColor"
-- !private "UIImage"
 - "UIViewController"
 - "ViewController"
 - !private "print"
@@ -44,12 +46,12 @@ depends-member:
 - !private ["So9ARSCNViewC", "scene"]
 - !private ["So9ARSCNViewC", "session"]
 - !private ["So17ARSCNViewDelegateP", "ARWorldTrackingConfiguration"]
+- !private ["So17ARSCNViewDelegateP", "SCNMaterial"]
 - !private ["So17ARSCNViewDelegateP", "SCNNode"]
 - !private ["So17ARSCNViewDelegateP", "SCNScene"]
 - !private ["So17ARSCNViewDelegateP", "SCNSphere"]
 - !private ["So17ARSCNViewDelegateP", "SCNVector3"]
 - !private ["So17ARSCNViewDelegateP", "UIColor"]
-- !private ["So17ARSCNViewDelegateP", "UIImage"]
 - ["So17ARSCNViewDelegateP", ""]
 - !private ["So17ARSCNViewDelegateP", "print"]
 - ["So17ARSCNViewDelegateP", "renderer"]
@@ -61,12 +63,12 @@ depends-member:
 - !private ["So9ARSessionC", "pause"]
 - !private ["So9ARSessionC", "run"]
 - !private ["So17ARSessionObserverP", "ARWorldTrackingConfiguration"]
+- !private ["So17ARSessionObserverP", "SCNMaterial"]
 - !private ["So17ARSessionObserverP", "SCNNode"]
 - !private ["So17ARSessionObserverP", "SCNScene"]
 - !private ["So17ARSessionObserverP", "SCNSphere"]
 - !private ["So17ARSessionObserverP", "SCNVector3"]
 - !private ["So17ARSessionObserverP", "UIColor"]
-- !private ["So17ARSessionObserverP", "UIImage"]
 - ["So17ARSessionObserverP", ""]
 - !private ["So17ARSessionObserverP", "print"]
 - ["So17ARSessionObserverP", "renderer"]
@@ -77,31 +79,32 @@ depends-member:
 - ["So17ARSessionObserverP", "sessionWasInterrupted"]
 - !private ["So28ARWorldTrackingConfigurationC", "init"]
 - !private ["So28ARWorldTrackingConfigurationC", "planeDetection"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["So15CALayerDelegateP", "delegate"]
 - !private ["So15CALayerDelegateP", "scene"]
 - !private ["So15CALayerDelegateP", "session"]
 - !private ["s7CVarArgP", "ARWorldTrackingConfiguration"]
+- !private ["s7CVarArgP", "SCNMaterial"]
 - !private ["s7CVarArgP", "SCNNode"]
 - !private ["s7CVarArgP", "SCNScene"]
 - !private ["s7CVarArgP", "SCNSphere"]
 - !private ["s7CVarArgP", "SCNVector3"]
 - !private ["s7CVarArgP", "UIColor"]
-- !private ["s7CVarArgP", "UIImage"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addChildNode"]
 - !private ["s7CVarArgP", "contents"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "diffuse"]
-- !private ["s7CVarArgP", "firstMaterial"]
-- !private ["s7CVarArgP", "green"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "intensity"]
-- !private ["s7CVarArgP", "multiply"]
+- !private ["s7CVarArgP", "materials"]
 - !private ["s7CVarArgP", "pause"]
 - !private ["s7CVarArgP", "planeDetection"]
 - !private ["s7CVarArgP", "position"]
 - !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "red"]
 - ["s7CVarArgP", "renderer"]
 - !private ["s7CVarArgP", "rootNode"]
 - !private ["s7CVarArgP", "run"]
@@ -115,29 +118,31 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "viewWillAppear"]
 - !private ["s7CVarArgP", "viewWillDisappear"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "ARWorldTrackingConfiguration"]
+- !private ["s28CustomDebugStringConvertibleP", "SCNMaterial"]
 - !private ["s28CustomDebugStringConvertibleP", "SCNNode"]
 - !private ["s28CustomDebugStringConvertibleP", "SCNScene"]
 - !private ["s28CustomDebugStringConvertibleP", "SCNSphere"]
 - !private ["s28CustomDebugStringConvertibleP", "SCNVector3"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
-- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addChildNode"]
 - !private ["s28CustomDebugStringConvertibleP", "contents"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "diffuse"]
-- !private ["s28CustomDebugStringConvertibleP", "firstMaterial"]
-- !private ["s28CustomDebugStringConvertibleP", "green"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "intensity"]
-- !private ["s28CustomDebugStringConvertibleP", "multiply"]
+- !private ["s28CustomDebugStringConvertibleP", "materials"]
 - !private ["s28CustomDebugStringConvertibleP", "pause"]
 - !private ["s28CustomDebugStringConvertibleP", "planeDetection"]
 - !private ["s28CustomDebugStringConvertibleP", "position"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "red"]
 - ["s28CustomDebugStringConvertibleP", "renderer"]
 - !private ["s28CustomDebugStringConvertibleP", "rootNode"]
 - !private ["s28CustomDebugStringConvertibleP", "run"]
@@ -152,28 +157,33 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "delegate"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "scene"]
+- !private ["s17CustomReflectableP", "session"]
 - !private ["s23CustomStringConvertibleP", "ARWorldTrackingConfiguration"]
+- !private ["s23CustomStringConvertibleP", "SCNMaterial"]
 - !private ["s23CustomStringConvertibleP", "SCNNode"]
 - !private ["s23CustomStringConvertibleP", "SCNScene"]
 - !private ["s23CustomStringConvertibleP", "SCNSphere"]
 - !private ["s23CustomStringConvertibleP", "SCNVector3"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
-- !private ["s23CustomStringConvertibleP", "UIImage"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addChildNode"]
 - !private ["s23CustomStringConvertibleP", "contents"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "diffuse"]
-- !private ["s23CustomStringConvertibleP", "firstMaterial"]
-- !private ["s23CustomStringConvertibleP", "green"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "intensity"]
-- !private ["s23CustomStringConvertibleP", "multiply"]
+- !private ["s23CustomStringConvertibleP", "materials"]
 - !private ["s23CustomStringConvertibleP", "pause"]
 - !private ["s23CustomStringConvertibleP", "planeDetection"]
 - !private ["s23CustomStringConvertibleP", "position"]
 - !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "red"]
 - ["s23CustomStringConvertibleP", "renderer"]
 - !private ["s23CustomStringConvertibleP", "rootNode"]
 - !private ["s23CustomStringConvertibleP", "run"]
@@ -187,104 +197,128 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
 - !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EquatableP", "ARWorldTrackingConfiguration"]
-- !private ["s9EquatableP", "SCNNode"]
-- !private ["s9EquatableP", "SCNScene"]
-- !private ["s9EquatableP", "SCNSphere"]
-- !private ["s9EquatableP", "SCNVector3"]
-- !private ["s9EquatableP", "UIColor"]
-- !private ["s9EquatableP", "UIImage"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "addChildNode"]
-- !private ["s9EquatableP", "contents"]
-- !private ["s9EquatableP", "delegate"]
-- !private ["s9EquatableP", "diffuse"]
-- !private ["s9EquatableP", "firstMaterial"]
-- !private ["s9EquatableP", "green"]
-- !private ["s9EquatableP", "horizontal"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "intensity"]
-- !private ["s9EquatableP", "multiply"]
-- !private ["s9EquatableP", "pause"]
-- !private ["s9EquatableP", "planeDetection"]
-- !private ["s9EquatableP", "position"]
-- !private ["s9EquatableP", "print"]
-- ["s9EquatableP", "renderer"]
-- !private ["s9EquatableP", "rootNode"]
-- !private ["s9EquatableP", "run"]
-- !private ["s9EquatableP", "scene"]
-- !private ["s9EquatableP", "sceneView"]
-- ["s9EquatableP", "session"]
-- ["s9EquatableP", "sessionInterruptionEnded"]
-- ["s9EquatableP", "sessionShouldAttemptRelocalization"]
-- ["s9EquatableP", "sessionWasInterrupted"]
-- !private ["s9EquatableP", "trackingState"]
-- !private ["s9EquatableP", "vertical"]
-- !private ["s9EquatableP", "viewDidLoad"]
-- !private ["s9EquatableP", "viewWillAppear"]
-- !private ["s9EquatableP", "viewWillDisappear"]
+- !private ["Se", "delegate"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "scene"]
+- !private ["Se", "session"]
+- !private ["SE", "delegate"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "scene"]
+- !private ["SE", "session"]
+- !private ["SQ", "ARWorldTrackingConfiguration"]
+- !private ["SQ", "SCNMaterial"]
+- !private ["SQ", "SCNNode"]
+- !private ["SQ", "SCNScene"]
+- !private ["SQ", "SCNSphere"]
+- !private ["SQ", "SCNVector3"]
+- !private ["SQ", "UIColor"]
+- ["SQ", ""]
+- !private ["SQ", "addChildNode"]
+- !private ["SQ", "contents"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "diffuse"]
+- ["SQ", "excessiveMotion"]
+- !private ["SQ", "horizontal"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- ["SQ", "initializing"]
+- ["SQ", "insufficientFeatures"]
+- !private ["SQ", "intensity"]
+- !private ["SQ", "materials"]
+- !private ["SQ", "pause"]
+- !private ["SQ", "planeDetection"]
+- !private ["SQ", "position"]
+- !private ["SQ", "print"]
+- !private ["SQ", "red"]
+- ["SQ", "relocalizing"]
+- ["SQ", "renderer"]
+- !private ["SQ", "rootNode"]
+- !private ["SQ", "run"]
+- !private ["SQ", "scene"]
+- !private ["SQ", "sceneView"]
+- ["SQ", "session"]
+- ["SQ", "sessionInterruptionEnded"]
+- ["SQ", "sessionShouldAttemptRelocalization"]
+- ["SQ", "sessionWasInterrupted"]
+- !private ["SQ", "trackingState"]
+- !private ["SQ", "vertical"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "viewWillAppear"]
+- !private ["SQ", "viewWillDisappear"]
 - !private ["s25ExpressibleByArrayLiteralP", "horizontal"]
 - !private ["s25ExpressibleByArrayLiteralP", "vertical"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "delegate"]
+- !private ["s23ExpressibleByNilLiteralP", "scene"]
+- !private ["s23ExpressibleByNilLiteralP", "session"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "ARWorldTrackingConfiguration"]
-- !private ["s8HashableP", "SCNNode"]
-- !private ["s8HashableP", "SCNScene"]
-- !private ["s8HashableP", "SCNSphere"]
-- !private ["s8HashableP", "SCNVector3"]
-- !private ["s8HashableP", "UIColor"]
-- !private ["s8HashableP", "UIImage"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "addChildNode"]
-- !private ["s8HashableP", "contents"]
-- !private ["s8HashableP", "delegate"]
-- !private ["s8HashableP", "diffuse"]
-- !private ["s8HashableP", "firstMaterial"]
-- !private ["s8HashableP", "green"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "intensity"]
-- !private ["s8HashableP", "multiply"]
-- !private ["s8HashableP", "pause"]
-- !private ["s8HashableP", "planeDetection"]
-- !private ["s8HashableP", "position"]
-- !private ["s8HashableP", "print"]
-- ["s8HashableP", "renderer"]
-- !private ["s8HashableP", "rootNode"]
-- !private ["s8HashableP", "run"]
-- !private ["s8HashableP", "scene"]
-- !private ["s8HashableP", "sceneView"]
-- ["s8HashableP", "session"]
-- ["s8HashableP", "sessionInterruptionEnded"]
-- ["s8HashableP", "sessionShouldAttemptRelocalization"]
-- ["s8HashableP", "sessionWasInterrupted"]
-- !private ["s8HashableP", "trackingState"]
-- !private ["s8HashableP", "viewDidLoad"]
-- !private ["s8HashableP", "viewWillAppear"]
-- !private ["s8HashableP", "viewWillDisappear"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "ARWorldTrackingConfiguration"]
+- !private ["SH", "SCNMaterial"]
+- !private ["SH", "SCNNode"]
+- !private ["SH", "SCNScene"]
+- !private ["SH", "SCNSphere"]
+- !private ["SH", "SCNVector3"]
+- !private ["SH", "UIColor"]
+- ["SH", ""]
+- !private ["SH", "addChildNode"]
+- !private ["SH", "contents"]
+- !private ["SH", "delegate"]
+- !private ["SH", "diffuse"]
+- ["SH", "excessiveMotion"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- ["SH", "initializing"]
+- ["SH", "insufficientFeatures"]
+- !private ["SH", "intensity"]
+- !private ["SH", "materials"]
+- !private ["SH", "pause"]
+- !private ["SH", "planeDetection"]
+- !private ["SH", "position"]
+- !private ["SH", "print"]
+- !private ["SH", "red"]
+- ["SH", "relocalizing"]
+- ["SH", "renderer"]
+- !private ["SH", "rootNode"]
+- !private ["SH", "run"]
+- !private ["SH", "scene"]
+- !private ["SH", "sceneView"]
+- ["SH", "session"]
+- ["SH", "sessionInterruptionEnded"]
+- ["SH", "sessionShouldAttemptRelocalization"]
+- ["SH", "sessionWasInterrupted"]
+- !private ["SH", "trackingState"]
+- !private ["SH", "viewDidLoad"]
+- !private ["SH", "viewWillAppear"]
+- !private ["SH", "viewWillDisappear"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "ARWorldTrackingConfiguration"]
+- !private ["So8NSCodingP", "SCNMaterial"]
 - !private ["So8NSCodingP", "SCNNode"]
 - !private ["So8NSCodingP", "SCNScene"]
 - !private ["So8NSCodingP", "SCNSphere"]
 - !private ["So8NSCodingP", "SCNVector3"]
 - !private ["So8NSCodingP", "UIColor"]
-- !private ["So8NSCodingP", "UIImage"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addChildNode"]
 - !private ["So8NSCodingP", "contents"]
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "diffuse"]
-- !private ["So8NSCodingP", "firstMaterial"]
-- !private ["So8NSCodingP", "green"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "intensity"]
-- !private ["So8NSCodingP", "multiply"]
+- !private ["So8NSCodingP", "materials"]
 - !private ["So8NSCodingP", "position"]
 - !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "red"]
 - ["So8NSCodingP", "renderer"]
 - !private ["So8NSCodingP", "rootNode"]
 - !private ["So8NSCodingP", "scene"]
@@ -298,21 +332,21 @@ depends-member:
 - !private ["So8NSCodingP", "viewWillDisappear"]
 - !private ["So9NSCopyingP", "addChildNode"]
 - !private ["So9NSCopyingP", "diffuse"]
-- !private ["So9NSCopyingP", "firstMaterial"]
-- !private ["So9NSCopyingP", "green"]
 - !private ["So9NSCopyingP", "init"]
-- !private ["So9NSCopyingP", "multiply"]
+- !private ["So9NSCopyingP", "materials"]
 - !private ["So9NSCopyingP", "planeDetection"]
 - !private ["So9NSCopyingP", "position"]
+- !private ["So9NSCopyingP", "red"]
 - !private ["So9NSCopyingP", "trackingState"]
 - !private ["So26NSExtensionRequestHandlingP", "ARWorldTrackingConfiguration"]
+- !private ["So26NSExtensionRequestHandlingP", "SCNMaterial"]
 - !private ["So26NSExtensionRequestHandlingP", "SCNNode"]
 - !private ["So26NSExtensionRequestHandlingP", "SCNScene"]
 - !private ["So26NSExtensionRequestHandlingP", "SCNSphere"]
 - !private ["So26NSExtensionRequestHandlingP", "SCNVector3"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
-- !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
 - ["So26NSExtensionRequestHandlingP", "renderer"]
@@ -324,10 +358,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillDisappear"]
-- !private ["So21NSItemProviderReadingP", "green"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "green"]
-- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderReadingP", "red"]
+- !private ["So21NSItemProviderWritingP", "red"]
 - ["So8NSObjectC", "ARAnchor"]
 - ["So8NSObjectC", "ARCamera"]
 - ["So8NSObjectC", "ARSCNView"]
@@ -335,26 +367,26 @@ depends-member:
 - !private ["So8NSObjectC", "ARWorldTrackingConfiguration"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "Error"]
+- !private ["So8NSObjectC", "SCNMaterial"]
 - ["So8NSObjectC", "SCNNode"]
 - !private ["So8NSObjectC", "SCNScene"]
 - ["So8NSObjectC", "SCNSceneRenderer"]
 - !private ["So8NSObjectC", "SCNSphere"]
 - !private ["So8NSObjectC", "SCNVector3"]
 - !private ["So8NSObjectC", "UIColor"]
-- !private ["So8NSObjectC", "UIImage"]
 - !private ["So8NSObjectC", "addChildNode"]
 - !private ["So8NSObjectC", "contents"]
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "diffuse"]
-- !private ["So8NSObjectC", "firstMaterial"]
-- !private ["So8NSObjectC", "green"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "intensity"]
-- !private ["So8NSObjectC", "multiply"]
+- !private ["So8NSObjectC", "materials"]
 - !private ["So8NSObjectC", "pause"]
 - !private ["So8NSObjectC", "planeDetection"]
 - !private ["So8NSObjectC", "position"]
 - !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "red"]
 - ["So8NSObjectC", "renderer"]
 - !private ["So8NSObjectC", "rootNode"]
 - !private ["So8NSObjectC", "run"]
@@ -368,76 +400,82 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewWillAppear"]
 - ["So8NSObjectC", "viewWillDisappear"]
-- !private ["So16NSObjectProtocolP", "ARWorldTrackingConfiguration"]
-- !private ["So16NSObjectProtocolP", "SCNNode"]
-- !private ["So16NSObjectProtocolP", "SCNScene"]
-- !private ["So16NSObjectProtocolP", "SCNSphere"]
-- !private ["So16NSObjectProtocolP", "SCNVector3"]
-- !private ["So16NSObjectProtocolP", "UIColor"]
-- !private ["So16NSObjectProtocolP", "UIImage"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addChildNode"]
-- !private ["So16NSObjectProtocolP", "contents"]
-- !private ["So16NSObjectProtocolP", "delegate"]
-- !private ["So16NSObjectProtocolP", "diffuse"]
-- !private ["So16NSObjectProtocolP", "firstMaterial"]
-- !private ["So16NSObjectProtocolP", "green"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "intensity"]
-- !private ["So16NSObjectProtocolP", "multiply"]
-- !private ["So16NSObjectProtocolP", "pause"]
-- !private ["So16NSObjectProtocolP", "planeDetection"]
-- !private ["So16NSObjectProtocolP", "position"]
-- !private ["So16NSObjectProtocolP", "print"]
-- ["So16NSObjectProtocolP", "renderer"]
-- !private ["So16NSObjectProtocolP", "rootNode"]
-- !private ["So16NSObjectProtocolP", "run"]
-- !private ["So16NSObjectProtocolP", "scene"]
-- !private ["So16NSObjectProtocolP", "sceneView"]
-- ["So16NSObjectProtocolP", "session"]
-- ["So16NSObjectProtocolP", "sessionInterruptionEnded"]
-- ["So16NSObjectProtocolP", "sessionShouldAttemptRelocalization"]
-- ["So16NSObjectProtocolP", "sessionWasInterrupted"]
-- !private ["So16NSObjectProtocolP", "trackingState"]
-- !private ["So16NSObjectProtocolP", "viewDidLoad"]
-- !private ["So16NSObjectProtocolP", "viewWillAppear"]
-- !private ["So16NSObjectProtocolP", "viewWillDisappear"]
+- !private ["So8NSObjectP", "ARWorldTrackingConfiguration"]
+- !private ["So8NSObjectP", "SCNMaterial"]
+- !private ["So8NSObjectP", "SCNNode"]
+- !private ["So8NSObjectP", "SCNScene"]
+- !private ["So8NSObjectP", "SCNSphere"]
+- !private ["So8NSObjectP", "SCNVector3"]
+- !private ["So8NSObjectP", "UIColor"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addChildNode"]
+- !private ["So8NSObjectP", "contents"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "diffuse"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "intensity"]
+- !private ["So8NSObjectP", "materials"]
+- !private ["So8NSObjectP", "pause"]
+- !private ["So8NSObjectP", "planeDetection"]
+- !private ["So8NSObjectP", "position"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "red"]
+- ["So8NSObjectP", "renderer"]
+- !private ["So8NSObjectP", "rootNode"]
+- !private ["So8NSObjectP", "run"]
+- !private ["So8NSObjectP", "scene"]
+- !private ["So8NSObjectP", "sceneView"]
+- ["So8NSObjectP", "session"]
+- ["So8NSObjectP", "sessionInterruptionEnded"]
+- ["So8NSObjectP", "sessionShouldAttemptRelocalization"]
+- ["So8NSObjectP", "sessionWasInterrupted"]
+- !private ["So8NSObjectP", "trackingState"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So8NSObjectP", "viewWillAppear"]
+- !private ["So8NSObjectP", "viewWillDisappear"]
 - !private ["So14NSSecureCodingP", "addChildNode"]
 - !private ["So14NSSecureCodingP", "contents"]
 - !private ["So14NSSecureCodingP", "diffuse"]
-- !private ["So14NSSecureCodingP", "firstMaterial"]
-- !private ["So14NSSecureCodingP", "green"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "intensity"]
-- !private ["So14NSSecureCodingP", "multiply"]
+- !private ["So14NSSecureCodingP", "materials"]
 - !private ["So14NSSecureCodingP", "position"]
+- !private ["So14NSSecureCodingP", "red"]
 - !private ["So14NSSecureCodingP", "rootNode"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["s9OptionSetP", "vertical"]
-- !private ["So28ARWorldTrackingConfigurationC14PlaneDetectionV", "horizontal"]
-- !private ["So28ARWorldTrackingConfigurationC14PlaneDetectionV", "vertical"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "horizontal"]
-- !private ["s16RawRepresentableP", "vertical"]
+- !private ["Sq", "delegate"]
+- !private ["Sq", "scene"]
+- !private ["Sq", "session"]
+- !private ["So16ARPlaneDetectionV", "horizontal"]
+- !private ["So16ARPlaneDetectionV", "vertical"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "horizontal"]
+- !private ["SY", "vertical"]
+- ["So8ARCameraC5ARKitE13TrackingStateO6ReasonO", "excessiveMotion"]
+- ["So8ARCameraC5ARKitE13TrackingStateO6ReasonO", "initializing"]
+- ["So8ARCameraC5ARKitE13TrackingStateO6ReasonO", "insufficientFeatures"]
+- ["So8ARCameraC5ARKitE13TrackingStateO6ReasonO", "relocalizing"]
 - !private ["So13SCNActionableP", "addChildNode"]
 - !private ["So13SCNActionableP", "init"]
 - !private ["So13SCNActionableP", "position"]
 - !private ["So13SCNAnimatableP", "addChildNode"]
 - !private ["So13SCNAnimatableP", "contents"]
 - !private ["So13SCNAnimatableP", "diffuse"]
-- !private ["So13SCNAnimatableP", "firstMaterial"]
 - !private ["So13SCNAnimatableP", "init"]
 - !private ["So13SCNAnimatableP", "intensity"]
-- !private ["So13SCNAnimatableP", "multiply"]
+- !private ["So13SCNAnimatableP", "materials"]
 - !private ["So13SCNAnimatableP", "position"]
 - !private ["So17SCNBoundingVolumeP", "addChildNode"]
-- !private ["So17SCNBoundingVolumeP", "firstMaterial"]
 - !private ["So17SCNBoundingVolumeP", "init"]
+- !private ["So17SCNBoundingVolumeP", "materials"]
 - !private ["So17SCNBoundingVolumeP", "position"]
-- !private ["So11SCNGeometryC", "firstMaterial"]
 - !private ["So11SCNGeometryC", "init"]
+- !private ["So11SCNGeometryC", "materials"]
 - !private ["So11SCNMaterialC", "diffuse"]
-- !private ["So11SCNMaterialC", "multiply"]
+- !private ["So11SCNMaterialC", "init"]
 - !private ["So19SCNMaterialPropertyC", "contents"]
 - !private ["So19SCNMaterialPropertyC", "intensity"]
 - !private ["So7SCNNodeC", "addChildNode"]
@@ -449,12 +487,12 @@ depends-member:
 - !private ["So16SCNSceneRendererP", "scene"]
 - !private ["So16SCNSceneRendererP", "session"]
 - !private ["So24SCNSceneRendererDelegateP", "ARWorldTrackingConfiguration"]
+- !private ["So24SCNSceneRendererDelegateP", "SCNMaterial"]
 - !private ["So24SCNSceneRendererDelegateP", "SCNNode"]
 - !private ["So24SCNSceneRendererDelegateP", "SCNScene"]
 - !private ["So24SCNSceneRendererDelegateP", "SCNSphere"]
 - !private ["So24SCNSceneRendererDelegateP", "SCNVector3"]
 - !private ["So24SCNSceneRendererDelegateP", "UIColor"]
-- !private ["So24SCNSceneRendererDelegateP", "UIImage"]
 - ["So24SCNSceneRendererDelegateP", ""]
 - !private ["So24SCNSceneRendererDelegateP", "print"]
 - ["So24SCNSceneRendererDelegateP", "renderer"]
@@ -464,41 +502,48 @@ depends-member:
 - ["So24SCNSceneRendererDelegateP", "sessionShouldAttemptRelocalization"]
 - ["So24SCNSceneRendererDelegateP", "sessionWasInterrupted"]
 - !private ["So11SCNShadableP", "diffuse"]
-- !private ["So11SCNShadableP", "firstMaterial"]
 - !private ["So11SCNShadableP", "init"]
-- !private ["So11SCNShadableP", "multiply"]
-- !private ["So9SCNSphereC", "firstMaterial"]
+- !private ["So11SCNShadableP", "materials"]
 - !private ["So9SCNSphereC", "init"]
+- !private ["So9SCNSphereC", "materials"]
 - !private ["So19SCNTechniqueSupportP", "delegate"]
 - !private ["So19SCNTechniqueSupportP", "scene"]
 - !private ["So19SCNTechniqueSupportP", "session"]
-- !private ["SC10SCNVector3V", "init"]
+- !private ["So10SCNVector3V", "init"]
 - !private ["So7SCNViewC", "delegate"]
 - !private ["So7SCNViewC", "scene"]
 - !private ["So7SCNViewC", "session"]
-- !private ["s8SequenceP", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["s10SetAlgebraP", "horizontal"]
 - !private ["s10SetAlgebraP", "vertical"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- ["So8ARCameraC5ARKitE13TrackingStateO", "limited"]
+- ["So8ARCameraC5ARKitE13TrackingStateO", "normal"]
+- ["So8ARCameraC5ARKitE13TrackingStateO", "notAvailable"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
-- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "scene"]
 - !private ["So29UIAccessibilityIdentificationP", "session"]
 - !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "scene"]
 - !private ["So12UIAppearanceP", "session"]
 - !private ["So21UIAppearanceContainerP", "ARWorldTrackingConfiguration"]
+- !private ["So21UIAppearanceContainerP", "SCNMaterial"]
 - !private ["So21UIAppearanceContainerP", "SCNNode"]
 - !private ["So21UIAppearanceContainerP", "SCNScene"]
 - !private ["So21UIAppearanceContainerP", "SCNSphere"]
 - !private ["So21UIAppearanceContainerP", "SCNVector3"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
-- !private ["So21UIAppearanceContainerP", "UIImage"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "print"]
 - ["So21UIAppearanceContainerP", "renderer"]
@@ -511,15 +556,16 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
 - !private ["So21UIAppearanceContainerP", "viewWillDisappear"]
-- !private ["So7UIColorC", "green"]
+- !private ["So7UIColorC", "red"]
 - !private ["So18UIContentContainerP", "ARWorldTrackingConfiguration"]
+- !private ["So18UIContentContainerP", "SCNMaterial"]
 - !private ["So18UIContentContainerP", "SCNNode"]
 - !private ["So18UIContentContainerP", "SCNScene"]
 - !private ["So18UIContentContainerP", "SCNSphere"]
 - !private ["So18UIContentContainerP", "SCNVector3"]
 - !private ["So18UIContentContainerP", "UIColor"]
-- !private ["So18UIContentContainerP", "UIImage"]
 - ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "print"]
 - ["So18UIContentContainerP", "renderer"]
@@ -538,15 +584,16 @@ depends-member:
 - !private ["So13UIDynamicItemP", "scene"]
 - !private ["So13UIDynamicItemP", "session"]
 - !private ["So18UIFocusEnvironmentP", "ARWorldTrackingConfiguration"]
+- !private ["So18UIFocusEnvironmentP", "SCNMaterial"]
 - !private ["So18UIFocusEnvironmentP", "SCNNode"]
 - !private ["So18UIFocusEnvironmentP", "SCNScene"]
 - !private ["So18UIFocusEnvironmentP", "SCNSphere"]
 - !private ["So18UIFocusEnvironmentP", "SCNVector3"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
-- !private ["So18UIFocusEnvironmentP", "UIImage"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addChildNode"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "position"]
 - !private ["So18UIFocusEnvironmentP", "print"]
@@ -566,17 +613,19 @@ depends-member:
 - !private ["So11UIFocusItemP", "position"]
 - !private ["So11UIFocusItemP", "scene"]
 - !private ["So11UIFocusItemP", "session"]
-- !private ["So7UIImageC", "init"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So20UIFocusItemContainerP", "delegate"]
+- !private ["So20UIFocusItemContainerP", "scene"]
+- !private ["So20UIFocusItemContainerP", "session"]
 - !private ["So30UIPasteConfigurationSupportingP", "ARWorldTrackingConfiguration"]
+- !private ["So30UIPasteConfigurationSupportingP", "SCNMaterial"]
 - !private ["So30UIPasteConfigurationSupportingP", "SCNNode"]
 - !private ["So30UIPasteConfigurationSupportingP", "SCNScene"]
 - !private ["So30UIPasteConfigurationSupportingP", "SCNSphere"]
 - !private ["So30UIPasteConfigurationSupportingP", "SCNVector3"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - ["So30UIPasteConfigurationSupportingP", "renderer"]
@@ -596,15 +645,16 @@ depends-member:
 - !private ["So11UIResponderC", "ARWorldTrackingConfiguration"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "Error"]
+- !private ["So11UIResponderC", "SCNMaterial"]
 - ["So11UIResponderC", "SCNNode"]
 - !private ["So11UIResponderC", "SCNScene"]
 - ["So11UIResponderC", "SCNSceneRenderer"]
 - !private ["So11UIResponderC", "SCNSphere"]
 - !private ["So11UIResponderC", "SCNVector3"]
 - !private ["So11UIResponderC", "UIColor"]
-- !private ["So11UIResponderC", "UIImage"]
 - !private ["So11UIResponderC", "delegate"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "renderer"]
 - !private ["So11UIResponderC", "scene"]
@@ -617,14 +667,15 @@ depends-member:
 - ["So11UIResponderC", "viewWillAppear"]
 - ["So11UIResponderC", "viewWillDisappear"]
 - !private ["So30UIResponderStandardEditActionsP", "ARWorldTrackingConfiguration"]
+- !private ["So30UIResponderStandardEditActionsP", "SCNMaterial"]
 - !private ["So30UIResponderStandardEditActionsP", "SCNNode"]
 - !private ["So30UIResponderStandardEditActionsP", "SCNScene"]
 - !private ["So30UIResponderStandardEditActionsP", "SCNSphere"]
 - !private ["So30UIResponderStandardEditActionsP", "SCNVector3"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
-- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - ["So30UIResponderStandardEditActionsP", "renderer"]
@@ -638,13 +689,14 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillDisappear"]
 - !private ["So16UIStateRestoringP", "ARWorldTrackingConfiguration"]
+- !private ["So16UIStateRestoringP", "SCNMaterial"]
 - !private ["So16UIStateRestoringP", "SCNNode"]
 - !private ["So16UIStateRestoringP", "SCNScene"]
 - !private ["So16UIStateRestoringP", "SCNSphere"]
 - !private ["So16UIStateRestoringP", "SCNVector3"]
 - !private ["So16UIStateRestoringP", "UIColor"]
-- !private ["So16UIStateRestoringP", "UIImage"]
 - ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "print"]
 - ["So16UIStateRestoringP", "renderer"]
@@ -657,14 +709,15 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
 - !private ["So16UIStateRestoringP", "viewWillDisappear"]
 - !private ["So18UITraitEnvironmentP", "ARWorldTrackingConfiguration"]
+- !private ["So18UITraitEnvironmentP", "SCNMaterial"]
 - !private ["So18UITraitEnvironmentP", "SCNNode"]
 - !private ["So18UITraitEnvironmentP", "SCNScene"]
 - !private ["So18UITraitEnvironmentP", "SCNSphere"]
 - !private ["So18UITraitEnvironmentP", "SCNVector3"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
-- !private ["So18UITraitEnvironmentP", "UIImage"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "print"]
 - ["So18UITraitEnvironmentP", "renderer"]
@@ -677,6 +730,28 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
 - !private ["So18UITraitEnvironmentP", "viewWillDisappear"]
+- !private ["So23UIUserActivityRestoringP", "ARWorldTrackingConfiguration"]
+- !private ["So23UIUserActivityRestoringP", "SCNMaterial"]
+- !private ["So23UIUserActivityRestoringP", "SCNNode"]
+- !private ["So23UIUserActivityRestoringP", "SCNScene"]
+- !private ["So23UIUserActivityRestoringP", "SCNSphere"]
+- !private ["So23UIUserActivityRestoringP", "SCNVector3"]
+- !private ["So23UIUserActivityRestoringP", "UIColor"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- ["So23UIUserActivityRestoringP", "renderer"]
+- !private ["So23UIUserActivityRestoringP", "scene"]
+- !private ["So23UIUserActivityRestoringP", "sceneView"]
+- ["So23UIUserActivityRestoringP", "session"]
+- ["So23UIUserActivityRestoringP", "sessionInterruptionEnded"]
+- ["So23UIUserActivityRestoringP", "sessionShouldAttemptRelocalization"]
+- ["So23UIUserActivityRestoringP", "sessionWasInterrupted"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "viewWillAppear"]
+- !private ["So23UIUserActivityRestoringP", "viewWillDisappear"]
 - !private ["So6UIViewC", "delegate"]
 - !private ["So6UIViewC", "scene"]
 - !private ["So6UIViewC", "session"]
@@ -687,15 +762,16 @@ depends-member:
 - !private ["So16UIViewControllerC", "ARWorldTrackingConfiguration"]
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "Error"]
+- !private ["So16UIViewControllerC", "SCNMaterial"]
 - ["So16UIViewControllerC", "SCNNode"]
 - !private ["So16UIViewControllerC", "SCNScene"]
 - ["So16UIViewControllerC", "SCNSceneRenderer"]
 - !private ["So16UIViewControllerC", "SCNSphere"]
 - !private ["So16UIViewControllerC", "SCNVector3"]
 - !private ["So16UIViewControllerC", "UIColor"]
-- !private ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "renderer"]
 - ["So16UIViewControllerC", "sceneView"]
@@ -713,13 +789,13 @@ depends-member:
 - !private ["20simplesRenderingCode14ViewControllerC", "ARWorldTrackingConfiguration"]
 - ["20simplesRenderingCode14ViewControllerC", "Bool"]
 - ["20simplesRenderingCode14ViewControllerC", "Error"]
+- !private ["20simplesRenderingCode14ViewControllerC", "SCNMaterial"]
 - ["20simplesRenderingCode14ViewControllerC", "SCNNode"]
 - !private ["20simplesRenderingCode14ViewControllerC", "SCNScene"]
 - ["20simplesRenderingCode14ViewControllerC", "SCNSceneRenderer"]
 - !private ["20simplesRenderingCode14ViewControllerC", "SCNSphere"]
 - !private ["20simplesRenderingCode14ViewControllerC", "SCNVector3"]
 - !private ["20simplesRenderingCode14ViewControllerC", "UIColor"]
-- !private ["20simplesRenderingCode14ViewControllerC", "UIImage"]
 - ["20simplesRenderingCode14ViewControllerC", "deinit"]
 - ["20simplesRenderingCode14ViewControllerC", "init"]
 - !private ["20simplesRenderingCode14ViewControllerC", "print"]
@@ -736,33 +812,37 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "scene"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "session"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s26_ExpressibleByColorLiteralP", "green"]
-- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "red"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ARWorldTrackingConfiguration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SCNMaterial"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SCNNode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SCNScene"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SCNSphere"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SCNVector3"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addChildNode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contents"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "diffuse"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "firstMaterial"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "green"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "intensity"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "multiply"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "materials"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pause"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "planeDetection"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "position"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "red"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "renderer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rootNode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "run"]
@@ -776,7 +856,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
+- !private ["s21_ObjectiveCBridgeableP", "delegate"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "scene"]
+- !private ["s21_ObjectiveCBridgeableP", "session"]
+- !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "So8ARCameraC"
@@ -786,23 +871,24 @@ depends-nominal:
 - !private "So9ARSessionC"
 - "So17ARSessionObserverP"
 - !private "So28ARWorldTrackingConfigurationC"
-- !private "s23BidirectionalCollectionP"
+- !private "SK"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "So8NSCodingP"
@@ -811,12 +897,14 @@ depends-nominal:
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "s9OptionSetP"
-- !private "So28ARWorldTrackingConfigurationC14PlaneDetectionV"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
+- !private "Sq"
+- !private "So16ARPlaneDetectionV"
+- !private "Sm"
+- !private "SY"
+- "So8ARCameraC5ARKitE13TrackingStateO6ReasonO"
 - !private "So13SCNActionableP"
 - !private "So13SCNAnimatableP"
 - !private "So17SCNBoundingVolumeP"
@@ -830,14 +918,15 @@ depends-nominal:
 - !private "So11SCNShadableP"
 - !private "So9SCNSphereC"
 - !private "So19SCNTechniqueSupportP"
-- !private "SC10SCNVector3V"
+- !private "So10SCNVector3V"
 - !private "So7SCNViewC"
-- !private "s8SequenceP"
+- !private "ST"
 - !private "s10SetAlgebraP"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- "So8ARCameraC5ARKitE13TrackingStateO"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -847,13 +936,13 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
-- !private "So7UIImageC"
-- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "So20UIFocusItemContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So16UIStateRestoringP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - "20simplesRenderingCode14ViewControllerC"
@@ -863,49 +952,51 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
-- !private "s26_ExpressibleByImageLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ARKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SceneKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "882c4258dd22c338f2c1c2393921c8fe"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ARKit.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SceneKit.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode1121212.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c57ee90555931bb3f1903141c1643425"
